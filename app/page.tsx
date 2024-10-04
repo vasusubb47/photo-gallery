@@ -18,7 +18,7 @@ export default function Home() {
         <div className="m-2 p-2">
           <ul className="grid grid-cols-3 place-content-center">
             <li><a href="/">upload</a></li>
-            <li><a href="">view code</a></li>
+            <li><a href="https://github.com/vasusubb47/photo-gallery" target="_blank">view code</a></li>
           </ul>
         </div>
       </nav>
