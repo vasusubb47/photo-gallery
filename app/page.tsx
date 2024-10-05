@@ -1,5 +1,6 @@
 
-import ImageCard from "./image-card";
+import ImageCard from "./_components/image-card";
+import UploadModal from "./_components/upload";
 
 export default function Home() {
   return (
@@ -24,9 +25,10 @@ export default function Home() {
       </nav>
       <hr />
       <main>
-        <div className="p-2 grid grid-cols-5 place-content-center gap-2 w-auto">
+        <UploadModal />
+        <div className="p-2 flex flex-row flex-wrap gap-2">
           {(() => {
-            const images = Array.from({ length: 30 });
+            const images = Array.from({ length: 7 });
             return images.map((_, index) => (
               <ImageCard key={index} />
             ));
